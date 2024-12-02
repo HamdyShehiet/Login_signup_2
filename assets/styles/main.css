@@ -135,7 +135,7 @@ header .container a{
 @media (max-width: 768px) {
     .login .container{
         justify-content: center;
-    grid-template-columns: 100% ;
+    grid-template-columns: 70% ;
     }
     .login .container .image-box{
     display: none;
