@@ -45,3 +45,91 @@ header .container a{
     font-weight: 600;
     color: var(--black);
 }
+.login{
+    background-color: var(--white);
+}
+.login .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    min-height: 80vh;
+}
+.login .container .form-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    color: var(--black);
+    border: .5px solid var(--gray);
+    border-radius: 10px;
+}
+.login .container .form-box .heading span{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.login .container .form-box .heading h1{
+    font-size: 31px;
+    font-weight: 500;
+}
+.login .container .form-box .heading p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.login .container .form-box form label{
+    font-weight: 400;
+}
+.login .container .form-box form>input{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 15px ;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: .6px solid var(--black);
+}
+.login .container .form-box form input[type="submit"]{
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px ;
+    font-size: 16px;
+    font-weight: 500;
+    border: .6px solid var(--black);
+    color: var(--white);
+    background-color: var(--black);
+}
+.login .container .form-box form>input::placeholder{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--darkgray);
+}
+.login .container .form-box form .more-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 300;
+}
+.login .container .form-box form .more-details .remember-me{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+.login .container .form-box form .more-details a{
+    color: var(--dimgray);
+}
+.login .container .form-box>p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--gray);
+}
+.login .container .form-box>p a{
+    font-weight: 600;
+    color: var(--black);
+}
