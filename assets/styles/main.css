@@ -49,15 +49,17 @@ header .container a{
     background-color: var(--white);
 }
 .login .container{
-    display: grid;
-    grid-template-columns: repeat(2,50%);
-    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     min-height: 80vh;
 }
 .login .container .form-box{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 50%;
     padding: 30px;
     color: var(--black);
     border: .5px solid var(--gray);
@@ -132,12 +134,14 @@ header .container a{
     font-weight: 600;
     color: var(--black);
 }
+.login .container .image-box{
+    width: 50%;
+}
 @media (max-width: 768px) {
-    .login .container{
-        justify-content: center;
-    grid-template-columns: 70% ;
-    }
-    .login .container .image-box{
+.login .container .form-box{
+    width: 80% ;
+}
+.login .container .image-box{
     display: none;
 }
 }
