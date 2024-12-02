@@ -49,9 +49,8 @@ header .container a{
     background-color: var(--white);
 }
 .login .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
     gap: 20px;
     min-height: 80vh;
 }
@@ -132,4 +131,13 @@ header .container a{
 .login .container .form-box>p a{
     font-weight: 600;
     color: var(--black);
+}
+@media (max-width: 768px) {
+    .login .container{
+        justify-content: center;
+    grid-template-columns: 100% ;
+    }
+    .login .container .image-box{
+    display: none;
+}
 }
